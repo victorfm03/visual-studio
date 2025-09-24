@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dev"
+    <link href="../iconos/fontawesome-free-7.0.1-web/css/solid.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+    <i class="fa-solid fa-user"></i>
+
+</body>
+
+</html>
