@@ -18,14 +18,14 @@ include_once("cabecera.html");
 
 <div class="container" id="formularios">
     <div class="row">
-        <form class="form-horizontal" action="listado_componentes.php" method="get">
+        <form class="form-horizontal" action="listado_tipo_nombre.php" method="get">
             <fieldset>
                 <!-- Form Name -->
                 <legend>Buscar componentes de un tipo</legend>
                 <div class="form-group">
                     <label class="col-xs-4 control-label" for="lstTipo">Tipo de componente</label>
                     <div class="col-xs-4">
-                        <input type="text" name="txtNombre" id="txtNombre">
+                        <input type="text" name="txtNombre" id="txtNombre" placeholder="r">
                     </div>
                 </div>
 

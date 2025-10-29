@@ -5,10 +5,10 @@ $conexion = obtenerConexion();
 // Verifico si ha llegado el parametro de tipo 
 if (isset($_GET['txtNombre'])) {
     // Recuperar parámetro
-    $nombre = $_GET['txtNombre'];
+    $nombre = $_GET['txtNombre'].to_UpperCase();
 
     $sql = "SELECT *FROM tipo 
-WHERE tipo like '%$nombre';";
+WHERE tipo like '%$nombre$';";
 
 }else{
     $sql="SELECT *
@@ -19,7 +19,7 @@ WHERE tipo like '%$nombre';";
 $resultado = mysqli_query($conexion, $sql);
 
 // Montar tabla
-$mensaje = "<h2 class='text-center'>Listado de componentes</h2>";
+$mensaje = "<h2 class='text-center'>Listado de componentes por nombre</h2>";
 $mensaje .= "<table class='table table-striped'>";
 $mensaje .= "<thead><tr><th>IDTIPO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>ACCIÓN</th></tr></thead>";
 $mensaje .= "<tbody>";
