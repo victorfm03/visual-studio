@@ -5,10 +5,10 @@ $conexion = obtenerConexion();
 // Verifico si ha llegado el parametro de tipo 
 if (isset($_GET['txtNombre'])) {
     // Recuperar parámetro
-    $nombre = $_GET['txtNombre'].to_UpperCase();
+    $nombre = strtoupper($_GET['txtNombre']);
 
     $sql = "SELECT *FROM tipo 
-WHERE tipo like '%$nombre$';";
+WHERE tipo like '%$nombre%';";
 
 }else{
     $sql="SELECT *
