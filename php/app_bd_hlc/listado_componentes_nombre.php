@@ -25,19 +25,10 @@ include_once("cabecera.html");
                 <div class="form-group">
                     <label class="col-xs-4 control-label" for="lstTipo">Tipo de componente</label>
                     <div class="col-xs-4">
-                        <select name="lstTipo" id="lstTipo" class="form-select" aria-label="Default select example">
-                            <?php echo $options; ?>
-                        </select>
+                        <input type="text" name="txtNombre" id="txtNombre">
                     </div>
                 </div>
 
-                <!--Text input -->
-                <div class="form-group">
-                    <label class="col-xs-4 control-label" for="btnAceptarBuscarComponentesTipo"></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="txtBuscarComponentesNombre" name="txtBuscarComponentesNombre" class="btn btn-primary" value="Aceptar" />
-                    </div>
-                </div>
 
                 <!-- Button -->
                 <div class="form-group">
