@@ -19,7 +19,7 @@ WHERE tipo like '%$nombre%';";
 $resultado = mysqli_query($conexion, $sql);
 
 // Montar tabla
-$mensaje = "<h2 class='text-center'>Listado de componentes por nombre</h2>";
+$mensaje = "<h2 class='text-center'>Listado de tipos de componentes</h2>";
 $mensaje .= "<table class='table table-striped'>";
 $mensaje .= "<thead><tr><th>IDTIPO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>ACCIÓN</th></tr></thead>";
 $mensaje .= "<tbody>";
